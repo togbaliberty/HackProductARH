@@ -56,10 +56,19 @@ class ViewController: UIViewController, ARSKViewDelegate {
     
     func view(_ view: ARSKView, nodeFor anchor: ARAnchor) -> SKNode? {
         // Create and configure a node for the anchor added to the view's session.
-        let labelNode = SKLabelNode(text: "👾")
+        let parentNode = SKSpriteNode(color: .orange, size: CGSize(width: 50, height: 25))
+        parentNode.zPosition = 10
+        
+        let labelNode = SKLabelNode(text: "Price: $200,000\nBeds: 3 * Baths: 2\nAddress: 1492 Round Hill Dr\nCity: Virginia Beach State: VA")
+        labelNode.fontColor = .blue
+        labelNode.fontSize = 4
+        labelNode.numberOfLines = 4
         labelNode.horizontalAlignmentMode = .center
         labelNode.verticalAlignmentMode = .center
-        return labelNode;
+        labelNode.zPosition = 15
+        
+        parentNode.addChild(labelNode)
+        return parentNode;
     }
     
     func session(_ session: ARSession, didFailWithError error: Error) {
