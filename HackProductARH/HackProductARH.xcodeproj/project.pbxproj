@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1F318C211F2A446900047F53 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1F318C201F2A446900047F53 /* Alamofire.framework */; };
+		1F318C251F2A4E9B00047F53 /* Pods_HackProductARH.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1F318C241F2A4E9B00047F53 /* Pods_HackProductARH.framework */; };
+		5A568C712A326959790CF239 /* Pods_HackProductARHTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AE699E4EBC8CF26F175449A3 /* Pods_HackProductARHTests.framework */; };
 		B88C64A11F2A28DA009A59C8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B88C64A01F2A28DA009A59C8 /* AppDelegate.swift */; };
 		B88C64A31F2A28DA009A59C8 /* Scene.sks in Resources */ = {isa = PBXBuildFile; fileRef = B88C64A21F2A28DA009A59C8 /* Scene.sks */; };
 		B88C64A51F2A28DA009A59C8 /* Scene.swift in Sources */ = {isa = PBXBuildFile; fileRef = B88C64A41F2A28DA009A59C8 /* Scene.swift */; };
@@ -28,6 +31,14 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		18E6EA5728C4599827EAD91A /* Pods_HackProductARH.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HackProductARH.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		1F318C201F2A446900047F53 /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = "../../../../Library/Developer/Xcode/DerivedData/HackProductARH-anjcbpyivptblhdjmspgexukgnoa/Build/Products/Debug-iphoneos/Alamofire/Alamofire.framework"; sourceTree = "<group>"; };
+		1F318C221F2A454C00047F53 /* Pods_HackProductARH.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Pods_HackProductARH.framework; path = "Pods/../build/Debug-iphoneos/Pods_HackProductARH.framework"; sourceTree = "<group>"; };
+		1F318C241F2A4E9B00047F53 /* Pods_HackProductARH.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Pods_HackProductARH.framework; path = "../../../../Library/Developer/Xcode/DerivedData/HackProductARH-anjcbpyivptblhdjmspgexukgnoa/Build/Products/Debug-iphonesimulator/Pods_HackProductARH.framework"; sourceTree = "<group>"; };
+		466F40D8906F31786D2446EF /* Pods-HackProductARH.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HackProductARH.debug.xcconfig"; path = "Pods/Target Support Files/Pods-HackProductARH/Pods-HackProductARH.debug.xcconfig"; sourceTree = "<group>"; };
+		5B5926B302EA310F34A7FF3F /* Pods-HackProductARHTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HackProductARHTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-HackProductARHTests/Pods-HackProductARHTests.debug.xcconfig"; sourceTree = "<group>"; };
+		AE699E4EBC8CF26F175449A3 /* Pods_HackProductARHTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HackProductARHTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B41B608C3C436FD354661752 /* Pods-HackProductARH.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HackProductARH.release.xcconfig"; path = "Pods/Target Support Files/Pods-HackProductARH/Pods-HackProductARH.release.xcconfig"; sourceTree = "<group>"; };
 		B88C649D1F2A28DA009A59C8 /* HackProductARH.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HackProductARH.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B88C64A01F2A28DA009A59C8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B88C64A21F2A28DA009A59C8 /* Scene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = Scene.sks; sourceTree = "<group>"; };
@@ -40,6 +51,7 @@
 		B88C64B51F2A28DA009A59C8 /* HackProductARHTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HackProductARHTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B88C64B91F2A28DA009A59C8 /* HackProductARHTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HackProductARHTests.swift; sourceTree = "<group>"; };
 		B88C64BB1F2A28DA009A59C8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BB679723BCA156041B501B7D /* Pods-HackProductARHTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HackProductARHTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-HackProductARHTests/Pods-HackProductARHTests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,6 +59,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1F318C251F2A4E9B00047F53 /* Pods_HackProductARH.framework in Frameworks */,
+				1F318C211F2A446900047F53 /* Alamofire.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -54,18 +68,44 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5A568C712A326959790CF239 /* Pods_HackProductARHTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		6A388EB3B215A68577FCF1BB /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				466F40D8906F31786D2446EF /* Pods-HackProductARH.debug.xcconfig */,
+				B41B608C3C436FD354661752 /* Pods-HackProductARH.release.xcconfig */,
+				5B5926B302EA310F34A7FF3F /* Pods-HackProductARHTests.debug.xcconfig */,
+				BB679723BCA156041B501B7D /* Pods-HackProductARHTests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		6BB26EC9FA8A6998B68E7877 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1F318C221F2A454C00047F53 /* Pods_HackProductARH.framework */,
+				1F318C241F2A4E9B00047F53 /* Pods_HackProductARH.framework */,
+				1F318C201F2A446900047F53 /* Alamofire.framework */,
+				18E6EA5728C4599827EAD91A /* Pods_HackProductARH.framework */,
+				AE699E4EBC8CF26F175449A3 /* Pods_HackProductARHTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		B88C64941F2A28DA009A59C8 = {
 			isa = PBXGroup;
 			children = (
 				B88C649F1F2A28DA009A59C8 /* HackProductARH */,
 				B88C64B81F2A28DA009A59C8 /* HackProductARHTests */,
 				B88C649E1F2A28DA009A59C8 /* Products */,
+				6A388EB3B215A68577FCF1BB /* Pods */,
+				6BB26EC9FA8A6998B68E7877 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -109,9 +149,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = B88C64BE1F2A28DA009A59C8 /* Build configuration list for PBXNativeTarget "HackProductARH" */;
 			buildPhases = (
+				E27DC1E5EDD7B1743CEEB595 /* [CP] Check Pods Manifest.lock */,
 				B88C64991F2A28DA009A59C8 /* Sources */,
 				B88C649A1F2A28DA009A59C8 /* Frameworks */,
 				B88C649B1F2A28DA009A59C8 /* Resources */,
+				D405FC01AC72A17DA4DE7A54 /* [CP] Embed Pods Frameworks */,
+				97CEC0ABDE900B475ED51367 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -126,9 +169,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = B88C64C11F2A28DA009A59C8 /* Build configuration list for PBXNativeTarget "HackProductARHTests" */;
 			buildPhases = (
+				8CB94110132377584CA07AAF /* [CP] Check Pods Manifest.lock */,
 				B88C64B11F2A28DA009A59C8 /* Sources */,
 				B88C64B21F2A28DA009A59C8 /* Frameworks */,
 				B88C64B31F2A28DA009A59C8 /* Resources */,
+				725F140B2BF972B86395F8E4 /* [CP] Embed Pods Frameworks */,
+				F05472810E8C3110C257D3EF /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -198,6 +244,99 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		725F140B2BF972B86395F8E4 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-HackProductARHTests/Pods-HackProductARHTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8CB94110132377584CA07AAF /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		97CEC0ABDE900B475ED51367 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-HackProductARH/Pods-HackProductARH-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D405FC01AC72A17DA4DE7A54 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-HackProductARH/Pods-HackProductARH-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E27DC1E5EDD7B1743CEEB595 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		F05472810E8C3110C257D3EF /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-HackProductARHTests/Pods-HackProductARHTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		B88C64991F2A28DA009A59C8 /* Sources */ = {
@@ -353,9 +492,14 @@
 		};
 		B88C64BF1F2A28DA009A59C8 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 466F40D8906F31786D2446EF /* Pods-HackProductARH.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = J4K8R64DXS;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/build/Debug-iphoneos",
+				);
 				INFOPLIST_FILE = HackProductARH/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.homes.HackProductARH;
@@ -367,9 +511,14 @@
 		};
 		B88C64C01F2A28DA009A59C8 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B41B608C3C436FD354661752 /* Pods-HackProductARH.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = J4K8R64DXS;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/build/Debug-iphoneos",
+				);
 				INFOPLIST_FILE = HackProductARH/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.homes.HackProductARH;
@@ -381,6 +530,7 @@
 		};
 		B88C64C21F2A28DA009A59C8 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5B5926B302EA310F34A7FF3F /* Pods-HackProductARHTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -397,6 +547,7 @@
 		};
 		B88C64C31F2A28DA009A59C8 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = BB679723BCA156041B501B7D /* Pods-HackProductARHTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -430,6 +581,7 @@
 				B88C64C01F2A28DA009A59C8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		B88C64C11F2A28DA009A59C8 /* Build configuration list for PBXNativeTarget "HackProductARHTests" */ = {
 			isa = XCConfigurationList;
@@ -438,6 +590,7 @@
 				B88C64C31F2A28DA009A59C8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

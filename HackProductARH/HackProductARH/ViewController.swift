@@ -9,6 +9,7 @@
 import UIKit
 import SpriteKit
 import ARKit
+import Alamofire
 import CoreLocation
 
 
@@ -42,6 +43,9 @@ class ViewController: UIViewController, ARSKViewDelegate, CLLocationManagerDeleg
         locationManager?.desiredAccuracy = kCLLocationAccuracyNearestTenMeters
         
         locationManager?.requestAlwaysAuthorization()
+        
+        // Get the listings
+        fetchListings()
         
     }
     
@@ -108,5 +112,21 @@ class ViewController: UIViewController, ARSKViewDelegate, CLLocationManagerDeleg
     func sessionInterruptionEnded(_ session: ARSession) {
         // Reset tracking and/or remove existing anchors if consistent tracking is required
         
+    }
+    
+    func fetchListings() {
+        Alamofire.request("https://heliosapi.homes.com/v1/listings/search?api_key=1-hdca-jOloeQJt4gNYZQiXEpuzse&sort=sort_score%20%20asc&pagesize=25&page=1&fl=address,beds,caption,city,community_name,delta_price,detail_attributes,floorplans,full_baths,half_baths,lat,lng,listing_date,listing_status,main_image,nhc_property,premier_flag,price,property_type,property_video,propid,square_footage,state,street_view_direction,street_view_latlng_combo,supplier_id,total_baths,zip&status=for%20sale&listing_type=new%20home,resale&type=residential,lots/land,multi-family,condominium,townhouse,farm,resort,ranch/horse,mobile/manufactured&lat.min=36.79563630056295&lat.max=36.89800536203471&lng.min=-76.32505706771416&lng.max=-76.24505706802798",encoding: URLEncoding.default).responseJSON { response in
+            print("Request: \(String(describing: response.request))")   // original url request
+            print("Response: \(String(describing: response.response))") // http url response
+            print("Result: \(response.result)")                         // response serialization result
+            
+            if let json = response.result.value {
+                print("JSON: \(json)") // serialized json response
+            }
+            
+            if let data = response.data, let utf8Text = String(data: data, encoding: .utf8) {
+                print("Data: \(utf8Text)") // original server data as UTF8 string
+            }
+        }
     }
 }
