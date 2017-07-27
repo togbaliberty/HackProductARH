@@ -9,10 +9,16 @@
 import UIKit
 import SpriteKit
 import ARKit
+import CoreLocation
 
-class ViewController: UIViewController, ARSKViewDelegate {
+
+class ViewController: UIViewController, ARSKViewDelegate, CLLocationManagerDelegate {
     
     @IBOutlet var sceneView: ARSKView!
+    
+    var locationManager:CLLocationManager?
+    
+    var currentLocation: CLLocation!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -28,6 +34,24 @@ class ViewController: UIViewController, ARSKViewDelegate {
         if let scene = SKScene(fileNamed: "Scene") {
             sceneView.presentScene(scene)
         }
+        
+        //Location initialization
+        locationManager = CLLocationManager()
+        locationManager?.delegate = self
+        locationManager?.startUpdatingLocation()
+        locationManager?.desiredAccuracy = kCLLocationAccuracyNearestTenMeters
+        
+        locationManager?.requestAlwaysAuthorization()
+        
+    }
+    
+    func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
+        self.currentLocation = locations[0]
+        print(self.currentLocation.coordinate)
+    }
+    
+    func locationManager(_ manager: CLLocationManager, didFailWithError error: Error) {
+        print(error)
     }
     
     override func viewWillAppear(_ animated: Bool) {
