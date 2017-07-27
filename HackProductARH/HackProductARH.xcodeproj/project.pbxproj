@@ -8,7 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		1F318C211F2A446900047F53 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1F318C201F2A446900047F53 /* Alamofire.framework */; };
-		1F318C251F2A4E9B00047F53 /* Pods_HackProductARH.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1F318C241F2A4E9B00047F53 /* Pods_HackProductARH.framework */; };
+		1F8E403B1F2A6D3B00673802 /* Pods_HackProductARH.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18E6EA5728C4599827EAD91A /* Pods_HackProductARH.framework */; };
+		1F8E403D1F2A6D4000673802 /* SwiftyJSON.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1F8E403C1F2A6D4000673802 /* SwiftyJSON.framework */; };
 		5A568C712A326959790CF239 /* Pods_HackProductARHTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AE699E4EBC8CF26F175449A3 /* Pods_HackProductARHTests.framework */; };
 		B88C64A11F2A28DA009A59C8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B88C64A01F2A28DA009A59C8 /* AppDelegate.swift */; };
 		B88C64A31F2A28DA009A59C8 /* Scene.sks in Resources */ = {isa = PBXBuildFile; fileRef = B88C64A21F2A28DA009A59C8 /* Scene.sks */; };
@@ -35,6 +36,7 @@
 		1F318C201F2A446900047F53 /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = "../../../../Library/Developer/Xcode/DerivedData/HackProductARH-anjcbpyivptblhdjmspgexukgnoa/Build/Products/Debug-iphoneos/Alamofire/Alamofire.framework"; sourceTree = "<group>"; };
 		1F318C221F2A454C00047F53 /* Pods_HackProductARH.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Pods_HackProductARH.framework; path = "Pods/../build/Debug-iphoneos/Pods_HackProductARH.framework"; sourceTree = "<group>"; };
 		1F318C241F2A4E9B00047F53 /* Pods_HackProductARH.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Pods_HackProductARH.framework; path = "../../../../Library/Developer/Xcode/DerivedData/HackProductARH-anjcbpyivptblhdjmspgexukgnoa/Build/Products/Debug-iphonesimulator/Pods_HackProductARH.framework"; sourceTree = "<group>"; };
+		1F8E403C1F2A6D4000673802 /* SwiftyJSON.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftyJSON.framework; path = "../../../../Library/Developer/Xcode/DerivedData/HackProductARH-anjcbpyivptblhdjmspgexukgnoa/Build/Products/Debug-iphoneos/SwiftyJSON/SwiftyJSON.framework"; sourceTree = "<group>"; };
 		466F40D8906F31786D2446EF /* Pods-HackProductARH.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HackProductARH.debug.xcconfig"; path = "Pods/Target Support Files/Pods-HackProductARH/Pods-HackProductARH.debug.xcconfig"; sourceTree = "<group>"; };
 		5B5926B302EA310F34A7FF3F /* Pods-HackProductARHTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HackProductARHTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-HackProductARHTests/Pods-HackProductARHTests.debug.xcconfig"; sourceTree = "<group>"; };
 		AE699E4EBC8CF26F175449A3 /* Pods_HackProductARHTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HackProductARHTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -59,7 +61,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1F318C251F2A4E9B00047F53 /* Pods_HackProductARH.framework in Frameworks */,
+				1F8E403D1F2A6D4000673802 /* SwiftyJSON.framework in Frameworks */,
+				1F8E403B1F2A6D3B00673802 /* Pods_HackProductARH.framework in Frameworks */,
 				1F318C211F2A446900047F53 /* Alamofire.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -89,6 +92,7 @@
 		6BB26EC9FA8A6998B68E7877 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				1F8E403C1F2A6D4000673802 /* SwiftyJSON.framework */,
 				1F318C221F2A454C00047F53 /* Pods_HackProductARH.framework */,
 				1F318C241F2A4E9B00047F53 /* Pods_HackProductARH.framework */,
 				1F318C201F2A446900047F53 /* Alamofire.framework */,

@@ -11,6 +11,8 @@ import SpriteKit
 import ARKit
 import Alamofire
 import CoreLocation
+import SwiftyJSON
+
 
 
 class ViewController: UIViewController, ARSKViewDelegate, CLLocationManagerDelegate {
