@@ -84,10 +84,15 @@ class ViewController: UIViewController, ARSKViewDelegate, CLLocationManagerDeleg
     
     func view(_ view: ARSKView, nodeFor anchor: ARAnchor) -> SKNode? {
         // Create and configure a node for the anchor added to the view's session.
-        let parentNode = SKSpriteNode(color: .orange, size: CGSize(width: 50, height: 25))
+        let parentNode = SKSpriteNode(color: .orange, size: CGSize(width: 100, height: 30))
         parentNode.zPosition = 10
         
-        let labelNode = SKLabelNode(text: "Price: $200,000\nBeds: 3 * Baths: 2\nAddress: 1492 Round Hill Dr\nCity: Virginia Beach State: VA")
+        // Attributed String
+        let myString = "Price: $200,000\nBeds: 3  Baths: 2\nAddress: 1492 Round Hill Dr\nCity: Virginia Beach State: VA"
+        let myAttributes = [ NSAttributedStringKey.foregroundColor: UIColor.blue, NSAttributedStringKey.font: UIFont.systemFont(ofSize: 6.0)]
+        let myAttrString = NSAttributedString(string: myString, attributes: myAttributes)
+        
+        let labelNode = SKLabelNode(attributedText: myAttrString)
         labelNode.fontColor = .blue
         labelNode.fontSize = 4
         labelNode.numberOfLines = 4
